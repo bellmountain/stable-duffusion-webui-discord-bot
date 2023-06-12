@@ -69,8 +69,3 @@ client.on('interactionCreate', async (interaction)=> {
 })
 
 client.login(process.env.TOKEN);
-
-
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min) ) + min;
-}
