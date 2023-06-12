@@ -5,7 +5,7 @@ env.config()
 
 const commands = [
   {
-    name: 'generate_image',
+    name: 'txt2img',
     description: 'generate an alex ai image.',
     options: [
       {
@@ -17,12 +17,16 @@ const commands = [
         name: 'negative_prompt',
         description: 'the negative prompt',
         type: ApplicationCommandOptionType.String,
-        //required: true
       },{
         name: 'seed',
         description: 'the seed',
         type: ApplicationCommandOptionType.Integer,
-        //required: true
+      },{
+        name: 'amount',
+        description: 'amount of images to be generated maximum 4',
+        type: ApplicationCommandOptionType.Integer,
+        minValue: 1,
+        maxValue: 4
       }
     ]
   },
