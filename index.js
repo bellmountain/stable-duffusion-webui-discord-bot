@@ -45,7 +45,7 @@ client.on('interactionCreate', async (interaction)=> {
           )
           const jsonInfo = JSON.parse( imgData.info )
           
-          //console.log(jsonInfo)
+          console.log(jsonInfo)
 
           //console.log(image)
           /*
