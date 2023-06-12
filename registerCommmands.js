@@ -15,7 +15,7 @@ const commands = [
         required: true
       },{
         name: 'negative_prompt',
-        description: 'negative prompt. default: bad anatomy,bad proportions,blurry,cloned face,cropped,deformed,dehydrated,disfigured,duplicate,error,extra arms,extra fingers,extra legs,extra limbs,fused fingers,gross proportions,jpeg artifacts,long neck,low quality,lowres,malformed,limbs missing,arms missing,legs missing,morbid,mutated hands,mutation,mutilated,out of frame,poorly drawn face,poorly drawn hands,signature,too many fingers,ugly,username,watermark,worst quality',
+        description: 'negative prompt. default: bad anatomy,bad proportions,blurry,cloned face,cropped,deformed...',
         type: ApplicationCommandOptionType.String,
       },{
         name: 'seed',
