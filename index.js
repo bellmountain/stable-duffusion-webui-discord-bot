@@ -1,9 +1,9 @@
 import { Client, IntentsBitField, EmbedBuilder, AttachmentBuilder } from 'discord.js'
 import env from 'dotenv'
-import generateImage from './api/generateImage.js'
+import generateImage from './api/txt2img.js'
 import { Buffer } from 'node:buffer'
 
-const negative = 'bad anatomy,bad proportions,blurry,cloned face,cropped,deformed,dehydrated,disfigured,duplicate,error,extra arms,extra fingers,extra legs,extra limbs,fused fingers,gross proportions,jpeg artifacts,long neck,low quality,lowres,malformed,limbs missing,arms missing,legs,morbid,mutated hands,mutation,mutilated,out of frame,poorly drawn face,poorly drawn hands,signature,too many fingers,ugly,username,watermark,worst quality'
+const negative = 'bad anatomy,bad proportions,blurry,cloned face,cropped,deformed,dehydrated,disfigured,duplicate,error,extra arms,extra fingers,extra legs,extra limbs,fused fingers,gross proportions,jpeg artifacts,long neck,low quality,lowres,malformed,limbs missing,arms missing,legs missing,morbid,mutated hands,mutation,mutilated,out of frame,poorly drawn face,poorly drawn hands,signature,too many fingers,ugly,username,watermark,worst quality'
 env.config()
  
 const client = new Client({
