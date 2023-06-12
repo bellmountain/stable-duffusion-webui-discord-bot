@@ -25,8 +25,8 @@ const commands = [
         name: 'amount',
         description: 'amount of images to be generated maximum 4',
         type: ApplicationCommandOptionType.Integer,
-        minValue: 1,
-        maxValue: 4
+        minValue: 1, //not working
+        maxValue: 4 // not working
       }
     ]
   },

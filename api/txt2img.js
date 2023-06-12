@@ -3,7 +3,7 @@ export default async function ( {prompt, negativePrompt, seed, amount} ) {
     const data= {
         "prompt":  'photo of alexensual man ' + prompt,
         'negative_prompt' : negativePrompt,
-        "steps": 10,
+        "steps": 50,
         "sampler_index": "Euler a",
         'seed': seed,
         'n_iter': amount > 4 ? 4 : amount 
