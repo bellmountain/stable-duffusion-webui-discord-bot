@@ -27,6 +27,10 @@ const commands = [
         type: ApplicationCommandOptionType.Integer,
         minValue: 1, //not working
         maxValue: 4 // not working
+      },{
+        name: 'share_prompt',
+        description: 'please share :)',
+        type: ApplicationCommandOptionType.Boolean,
       }
     ]
   },

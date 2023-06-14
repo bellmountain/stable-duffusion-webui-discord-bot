@@ -26,6 +26,7 @@ client.on('interactionCreate', async (interaction)=> {
           const negativePrompt = interaction.options.get('negative_prompt') ? interaction.options.get('negative_prompt').value : negative 
           const seed = interaction.options.get('seed') ? interaction.options.get('seed').value : undefined
           const amount = interaction.options.get('amount') ? interaction.options.get('amount').value : 1 
+          const sharePrompt = interaction.options.get('share_prompt') ? interaction.options.get('share_prompt').value : false 
 
           await interaction.deferReply()
           const imgData = await generateImage({
@@ -58,7 +59,8 @@ client.on('interactionCreate', async (interaction)=> {
           //console.log(image)
           //interaction.reply(prompt + negativePrompt)
           //interaction.reply({embeds: [embed], files: [image]})
-          interaction.followUp({content: 'Seed: ' + jsonInfo.seed.toString(), files: images})
+          interaction.followUp({content: `Seed: ${jsonInfo.seed.toString()}${sharePrompt? '\nPrompt: ' + prompt : ''}`,
+          files: images})
           //interaction.reply(image)
           //console.log(prompt)
     } catch(ex) {
